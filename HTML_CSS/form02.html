@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Basic HTML Page</title>
+<body>
+    
+    <form id="form">
+        First name: <input type="text" name="fname"><br><br>
+        Last name: <input type="text" name="lname"><br><br>
+        Password: <input type="password" name="pswd"><br><br>
+        <!-- Defining a clickable button which activiates a local JavaScript function -->
+        <input type="button" value="Submit" onclick="handle_Form()">
+    </form>
+    
+    <script>
+        function handle_Form(){
+            let form = document.getElementById("form");
+            for (var i=0; i < form.children.length; i++){
+                <!-- You can view the output in the console under Developer Tools in Chrome -->
+                console.log(form.children[i].tagName);   
+            }
+            
+            <!- Accessing the value of the text field -->
+            console.log(form.children[0].value);
+        }
+    </script>
+        
+</body>
+</html>
