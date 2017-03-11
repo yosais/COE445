@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Basic HTML Page</title>
+<body>
+    
+    <form>
+        First name: <input type="text" name="fname"><br><br>
+        Last name: <input type="text" name="lname"><br><br>
+        Password: <input type="password" name="pswd"><br><br>
+        <input type="date"/><br><br>
+        Select your favorite color: <input type="color" name="favcolor"><br><br>
+        E-mail: <input type="email" name="email"><br><br>
+        Quantity (between 1 and 5): <input type="number" name="quantity" min="1" max="5"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+        
+    <br><br><br>
+        
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" min="5" max="25" step="5"> + 
+        <input type="number" id="b" value="50">
+        =<output name="x" for="a b"></output>
+    </form>
+    
+    <!-- More info at https://www.w3schools.com/html/html_form_input_types.asp -->
+    
+</body>
+</html>
